@@ -1,0 +1,22 @@
+:root {
+    --primary: #2c3e50;
+    --water-blue: #3498db;
+    --grass-green: #27ae60;
+    --danger: #e74c3c;
+    --light-bg: #f4f7f6;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--primary);
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+h2 {
+    color: var(--water-blue);
+    border-bottom: 2px solid var(--water-blue);
+    padding-bottom: 10px;
+}
