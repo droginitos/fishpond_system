@@ -1,22 +1,79 @@
+/* style.css */
 :root {
-    --primary: #2c3e50;
-    --water-blue: #3498db;
-    --grass-green: #27ae60;
-    --danger: #e74c3c;
-    --light-bg: #f4f7f6;
+    --water-blue: #0077be;
+    --grass-green: #2ecc71;
+    --dark-slate: #2c3e50;
+    --light-gray: #f4f7f6;
+    --white: #ffffff;
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--light-bg);
-    color: var(--primary);
-    line-height: 1.6;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: var(--light-gray);
+    color: var(--dark-slate);
     margin: 0;
     padding: 20px;
 }
 
-h2 {
-    color: var(--water-blue);
-    border-bottom: 2px solid var(--water-blue);
-    padding-bottom: 10px;
+/* Make the tables look professional */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+th {
+    background-color: var(--water-blue);
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #eee;
+}
+
+tr:hover {
+    background-color: #f9f9f9;
+}
+
+/* Style the "Book" and "Action" links as buttons */
+a[href*="book_pond.php"], 
+button, 
+input[type="submit"] {
+    background-color: var(--grass-green);
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    display: inline-block;
+    cursor: pointer;
+}
+
+a[href*="reject"]:hover, .cancel-btn {
+    background-color: #e74c3c;
+}
+
+/* Style the Forms (Login/Register) */
+form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 450px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+input[type="text"], input[type="email"], input[type="password"], input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 6px;
 }
